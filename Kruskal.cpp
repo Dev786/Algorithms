@@ -51,7 +51,7 @@ int main() {
                 v = parent[v];
        
         if(u!=v){
-            u > v ? parent[u] = v : parent[v] = u;
+            u > v ? parent[v] = u : parent[u] = v;
             count+=Tree[i].value;
         }
     }
